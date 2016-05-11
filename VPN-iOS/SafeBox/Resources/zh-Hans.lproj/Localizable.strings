@@ -1,0 +1,194 @@
+/* 
+  Localizations.strings
+  SafeBox
+
+  Created by SongYang on 14-3-24.
+  Copyright (c) 2014年 SongYang. All rights reserved.
+*/
+
+"Cancel" = "取消";
+
+"Sure" = "确定";
+
+"Done" = "完成";
+
+"Edit"  = "编辑";
+
+"Add"  = "添加";
+
+"Set password" = "设置密码";
+
+"Photo" = "照片";
+
+"photos" = "张";
+
+"Please enter password" = "请输入密码";
+
+"Password incorrect" = "密码错误";
+
+"If you forgot the password, you can click lock icon on left to remove password by password-protect" = "如果您忘记密码，你可以点击左侧的锁图标，根据密码保护移除密码";
+
+"Create Failed" = "创建失败";
+
+"Folder already exits" = "此文件夹名称已经存在";
+
+"Input the new folder name" = "请输入新建文件夹名称";
+
+"Password can't be empty" = "密码不能为空";
+
+"please enter password" = "请输入密码";
+
+"Remove password" = "取消密码";
+
+"Two passwords different" = "两次输入密码不同";
+
+"Please enter again" = "请重新输入";
+
+"Set password" = "设置密码";
+
+"Move failed" = "移动失败";
+
+"New folder name can't be empty" = "新文件夹名称不能为空";
+
+"Click to select" = "点击多选";
+
+"Upload" = "上传";
+
+"Move" = "移动";
+
+"Please select at least one photo" = "请至少选择一张图片";
+
+"Please select at least one vedio" = "请至少选择一部视频";
+
+"Upload files to system album" = "选中文件->系统相册";
+
+"Move select files to exit folder" = "选中文件->已有文件夹";
+
+"Move select files to new folder" = "选中文件->新建文件夹";
+
+"Handle multiple photos" = "处理多张照片";
+
+"Please input new folder name" = "请输入新的文件夹名称";
+
+"Delete" = "删除";
+
+"Move photos" = "移动照片";
+
+"Move videos" = "移动视频";
+
+"Please select one folder" = "请选择一个文件夹";
+
+"Videos" = "视频";
+
+"Move files to new folder" = "移动到新建文件夹";
+
+"Please enter old password" = "请输入原密码";
+
+"Password" = "密码";
+
+"Repeat password" = "重复密码";
+
+"Savings Card" = "储蓄卡";
+
+"Credit Card" = "信用卡";
+
+"Mail" = "邮箱";
+
+"Useful Websites" = "常用网站";
+
+"Account" = "账号";
+
+"Remove password failed" = "取消密码失败";
+
+"Old password incorrect" = "原密码输入错误";
+
+"Input" = "请输入";
+
+"Title" = "标题";
+
+"CardNum" = "卡号";
+
+"CVC Code" = "CVC码";
+
+"Valid Date" = "有效日期";
+
+"Phone" = "电话";
+
+"Website" = "网址";
+
+"Notes" = "备注";
+
+"Add new record" = "新增记录";
+
+"Bank Card" = "银行卡";
+
+"Modify Login Password" = "修改登陆密码";
+
+"Modify" = "修改";
+
+"Enter new password" = "请输入新密码";
+
+"Enter new password again" = "请再次输入新密码";
+
+"About Info" = "关于信息";
+
+"SafeBox" = "保险箱";
+
+"Setting" = "设置";
+
+"Suggestion Feedback" = "意见反馈";
+
+"Using Manual" = "使用手册";
+
+"Modify failed" = "修改失败";
+
+"Modify password success" = "修改密码成功";
+
+"New password is empty，please input" = "新密码为空，请输入";
+
+"Old password is empty,please input" = "原密码为空，请输入";
+
+"Repeat password is empty,please input" = "重复密码为空，请输入";
+
+"Two passwords are diferent, please re-enter" = "新密码和重复密码不同，请重新输入";
+
+"Password must be four characters" = "密码必须为4位";
+
+"The old password is incorrect,please re-enter!!!" = "原密码不正确，请重新输入";
+
+"PASSWORD RELATED" = "密码相关";
+
+"PHOTOS AND VIDEOS" = "照片和视频";
+
+"OTHERS" = "其他";
+
+"All data in this app will be erased after %d failed passcode attempts." = "所有的应用程序数据会在%d次错误后清空.";
+"Cancel" = "取消";
+"Enable" = "启用";
+"Erase all content in the app after %d failed passcode attempts." = "在%d次密码错误后删除应用所有数据.";
+
+"Turn Passcode Off" = "关闭密码保护";
+"Turn Passcode On" = "开启密码保护";
+"Change Passcode" = "修改密码保护";
+"Erase Data" = "删除所有数据";
+"Set Passcode" = "设置密码";
+"Turn off Passcode" = "取消密码";
+"Enter Passcode" = "输入密码";
+"1 Failed Passcode Attempt" = "第1次密码错误";
+"%i Failed Passcode Attempts" = "第%i次密码错误";
+"Passcodes did not match. Try again." = "密码错误,请重试.";
+"Enter a different passcode. You cannot re-use the same passcode." = "请输入不同的密码.你不可以使用相同的密码.";
+
+"Enter your passcode" = "输入你的密码";
+"Enter a passcode" = "输入密码";
+"Re-enter your passcode" = "再输入一遍你的密码";
+"Enter your old passcode" = "输入你的旧密码";
+"Enter your new passcode" = "输入你的新密码";
+"Re-enter your new passcode" = "重新输入你的新密码";
+"Bookmark" = "添加书签";
+"Confirm" = "确认";
+"You have entered an incorrect passcode too many times. All account data in this app has been deleted." =
+"由于多次输入错误密码,所有的账户数据将会被删除.";
+
+
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>1、密码保护问题和答案</string>
+			<key>content</key>
+			<string>强烈建议您首先设置密码保护，因为密码保护是您找回登陆密码、文件夹密码的唯一依据；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2、登陆密码</string>
+			<key>content</key>
+			<string>1)登陆密码是您登陆程序的依据；
+2)登陆密码是设置访问控制条件的依据；
+3)忘记登陆密码：若您设置过密码保护，则在登陆界面输入密码错误3次后，界面跳转，此时输入密码护问题和答案，重置您的登陆密码；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>3、文件夹密码</string>
+			<key>content</key>
+			<string>1)您可以为每个文件夹单独设置密码;
+2)访问控制中可以设置有密码的文件夹显示或隐藏;</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>1、照片和视频说明</string>
+			<key>content</key>
+			<string>照片和视频的操作类似，下面以照片为例说明各项操作；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2、文件夹</string>
+			<key>content</key>
+			<string>1)点击左上角的+，可以创建新文件夹；
+2)删除文件夹：点击右上角的编辑或在要删除的文件夹的右侧左滑，即可删除；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>3、批量上传照片或视频到系统相册</string>
+			<key>content</key>
+			<string>点击“照片”列表中的某个文件夹进入，下方左侧第一个按钮，点击后可以多选或全选上传照片到系统相册；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>4、从系统相册批量下载照片或视频到程序</string>
+			<key>content</key>
+			<string>点击“照片”列表中的某个文件夹进入，下方左侧第二个按钮，点击后可以从系统相册多选照片下载到程序（访问系统相册需要您的许可）；
+            </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>5、拍摄照片或视频</string>
+			<key>content</key>
+			<string>点击“照片”列表中的某个文件夹进入，下方左侧第三个按钮，点击后可以拍摄照片或视频；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>6、修改文件夹名称</string>
+			<key>content</key>
+			<string>点击“照片”列表中的某个文件夹进入，下方左侧第四个按钮，点击后可以修改此文件夹名称；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>7、批量删除照片或视频</string>
+			<key>content</key>
+			<string>点击“照片”列表中的某个文件夹进入，下方左侧第五个按钮，点击后可以多选删除照片；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>8、设置文件夹封面</string>
+			<key>content</key>
+			<string>在照片或视频9宫格列表界面，点击某个照片或视频，即可全屏浏览照片或播放视频；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>9、设置文件夹密码</string>
+			<key>content</key>
+			<string>点击右上角“设置密码”按钮即可为本文件夹单独设置密码；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>10、移动文件</string>
+			<key>content</key>
+			<string>进入某个文件夹，点击下方的上传按钮您可以移动照片或视频到其他文件夹；</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>11、无法拍摄照片和视频</string>
+			<key>content</key>
+			<string>请在“设置”&gt;“隐私”&gt;“相机”中设置允许程序访问相机；</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>1、更多功能正在开发中，敬请期待</string>
+			<key>content</key>
+			<string>如果您有什么意见和建议，请点击“设置“&gt;“意见反馈“，给我们发送邮件。期待您的支持，我们一直在努力⋯</string>
+		</dict>
+	</array>
+</array>
+</plist>

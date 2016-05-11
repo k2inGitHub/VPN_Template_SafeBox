@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>1. Password protection and answers</string>
+			<key>content</key>
+			<string>Strongly recommended that you first set up password protection, because password protection is only basis for you retrieve login password and folder password when forgot;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2. Login password</string>
+			<key>content</key>
+			<string>1) Login password used for login program;
+2) Login password is the basis for setting access control conditions;
+3) Forgot Password: If you have set the password protected, enter the login password error three times, jump to new view, then enter the password protection questions and answers, you can reset your login  password ;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>3. Folder password</string>
+			<key>content</key>
+			<string>1) You can set password for each folder;
+2) Access control can set secret folder hidden or display;</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>1. Photo and video description</string>
+			<key>content</key>
+			<string>Photos and videos operation are similar so we explain photos operation as example;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>2. Folder</string>
+			<key>content</key>
+			<string>1) Click + on the left-top, you can create new folders;
+2) Delete folder:Click edit button on the right-top to delete folder;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>3. Upload photos and videos to system album</string>
+			<key>content</key>
+			<string>Click one photo folder to enter, then click first button on the bottom, select photos upload to system album;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>4. Download photos and videos from system album to program</string>
+			<key>content</key>
+			<string>Click one photo folder to enter, then click second button on the bottom, download photos and videos from system album to program(To access the system album needs your permission);
+            </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>5. Take a photo or video</string>
+			<key>content</key>
+			<string>Click one photo folder to enter, then click third button on the bottom, you can take a photo or video;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>6. Modify folder name</string>
+			<key>content</key>
+			<string>Click one photo folder to enter, then click fourlh button on the bottom, you can modify the folder name;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>7. Delete photos and videos</string>
+			<key>content</key>
+			<string>Click one photo folder to enter, then click fifth button on the bottom, you can delete file;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>8. Full screen view photos or play videos</string>
+			<key>content</key>
+			<string>In the photo or vide0 9 palace grid list screen, click on a photo or video, you can view photos or play videos in full screen;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>9. Set folder password</string>
+			<key>content</key>
+			<string>Click set-password button on the right-top, then set password for this folder;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>10. Move files</string>
+			<key>content</key>
+			<string>Enter one folder,click the upload button on the bottom,you can move photos or videos to exist folder or new folder;</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>11. Can't take a photograph</string>
+			<key>content</key>
+			<string>Please go to "Setting"->"Privacy"->"Camera' set allow program access camera.</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>1. More features are in development, please wait</string>
+			<key>content</key>
+			<string>If you have any comments and suggestions, please click "Settings" -> "Suggestion Feedback", send us an e-mail. Look forward to your support, we are always working hard...</string>
+		</dict>
+	</array>
+</array>
+</plist>
