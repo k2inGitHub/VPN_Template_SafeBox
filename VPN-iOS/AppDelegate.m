@@ -72,7 +72,8 @@
         [HLStartLogic start];
     } else {
         //产品入口
-        UIViewController *pageController = [[UIStoryboard storyboardWithName:@"VPN" bundle:nil] instantiateInitialViewController];
+        BOOL flag = [HLAnalyst boolValue:@"vpn_favor_switch" defaultValue:YES];
+        UIViewController *pageController = (![VPNManager sharedManager].hasFavor && flag) ? [[UIStoryboard storyboardWithName:@"VPN" bundle:nil] instantiateInitialViewController] : [[UIStoryboard storyboardWithName:@"VPN" bundle:nil] instantiateViewControllerWithIdentifier:@"page"];
         
         [_rootNavigationController setViewControllers:@[pageController] animated:NO];
     }

@@ -63,13 +63,13 @@
         return _descriptionText;
     }
     
-    if (_isVip) {
-        if ([[VPNManager sharedManager]isVip]) {
-            return @"VIP专享";
-        } else {
-            return @"VIP专享";
-        }
-    }
+//    if (_isVip) {
+//        if ([[VPNManager sharedManager]isVip]) {
+//            return @"VIP专享";
+//        } else {
+//            return @"VIP专享";
+//        }
+//    }
     
     if ([self isUnlock]) {
         return [NSString stringWithFormat:@"已解锁"];

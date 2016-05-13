@@ -90,7 +90,7 @@
 }
 
 - (void)updateVIP {
-    _vipButton.hidden = [[VPNManager sharedManager] isVip] || ([HLInterface sharedInstance].market_reviwed_status == 0);
+    _vipButton.hidden = YES;//[[VPNManager sharedManager] isVip] || ([HLInterface sharedInstance].market_reviwed_status == 0);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -162,7 +162,7 @@
             if (m.isVip) {
                 
                 if (![[VPNManager sharedManager] isVip]) {
-                    VPNAlertView *alertView = [VPNAlertView showWithAlertType:VPNAlertVIP];
+                    VPNAlertView *alertView = [VPNAlertView showWithAlertType:VPNAlertUnlock andModel:m];
                     alertView.delegate = self;
                     flag = NO;
                 }
@@ -189,6 +189,10 @@
 
 - (void)onUnlockFinish:(VPNHomeModel *)m {
     [self.tableView reloadData];
+    
+    if (m.isVip) {
+        [[VPNManager sharedManager] setisVip:YES];
+    }
 }
 
 - (void)onVipFinish{

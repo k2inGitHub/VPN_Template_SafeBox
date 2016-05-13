@@ -137,7 +137,7 @@ NSString * const VPNStatusDidChangeNotification = @"VPNStatusDidChangeNotificati
     if (cost > _currency) {
         
         if (_currency < 50) {
-            [KTUIFactory showAlertViewWithTitle:nil message:@"您的金币不足，系统将赠送您100金币" delegate:self tag:0 cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [KTUIFactory showAlertViewWithTitle:nil message:@"您已经没有金币了，观看完整视频广告可获得500金币！" delegate:self tag:0 cancelButtonTitle:@"拒绝" otherButtonTitles:@"免费金币", nil];
         } else {
             
             [UIAlertView showWithTitle:nil message:@"金币不足,去赚钱！" cancelButtonTitle:@"确定" otherButtonTitles:nil tapBlock:^(UIAlertView * _Nonnull alertView, NSInteger buttonIndex) {
@@ -159,13 +159,41 @@ NSString * const VPNStatusDidChangeNotification = @"VPNStatusDidChangeNotificati
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 
-    if (alertView.tag == 0) {
-        self.currency += 100;
+    if (buttonIndex == 1) {
+        
+#if TARGET_IPHONE_SIMULATOR
+        [self onInterstitialFinish:nil];
+#else
+        [[HLAdManager sharedInstance] showEncourageInterstitial];
+#endif
+         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onInterstitialFinish:) name:HLInterstitialFinishNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onInterstitialFailure:) name:HLInterstitialFailureNotification object:nil];
     }
+}
+
+- (void)onInterstitialFailure:(HLAdType *)adType {
+
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:HLInterstitialFinishNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self  name:HLInterstitialFailureNotification object:nil];
+}
+
+- (void)onInterstitialFinish:(HLAdType *)adType{
+    self.currency += 500;
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:HLInterstitialFinishNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self  name:HLInterstitialFailureNotification object:nil];
+
+    [UIAlertView showWithTitle:nil message:@"获得金币" cancelButtonTitle:@"确定" otherButtonTitles:nil tapBlock:nil];
 }
 
 - (void)addCurrency:(NSUInteger)add {
     self.currency += add;
+}
+
+- (void)setHasFavor:(BOOL)hasFavor{
+    
+    _hasFavor = hasFavor;
+    [[NSUserDefaults standardUserDefaults] setBool:_hasFavor forKey:@"vpn_hasFavor"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (instancetype)init
@@ -174,6 +202,8 @@ NSString * const VPNStatusDidChangeNotification = @"VPNStatusDidChangeNotificati
     if (!self) {
         return nil;
     }
+    
+    self.hasFavor = [[NSUserDefaults standardUserDefaults] boolForKey:@"vpn_hasFavor" defaultValue:NO];
     
     self.storyboard = [UIStoryboard storyboardWithName:@"VPN" bundle:nil];
     
@@ -222,6 +252,8 @@ NSString * const VPNStatusDidChangeNotification = @"VPNStatusDidChangeNotificati
     } else {
         _status = VPNStatusInvalid;
     }
+    
+
     
     return self;
 }

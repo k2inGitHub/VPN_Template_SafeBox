@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F8952C32AD2FA157CEADD3E8'
+               BlueprintIdentifier = '972C7BA026D6C2A3DB93BC33'
                BlueprintName = 'THLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libTHLabel.a'>

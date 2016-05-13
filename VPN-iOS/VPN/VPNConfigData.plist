@@ -74,7 +74,7 @@
 				<key>detail</key>
 				<string>視頻|圖片</string>
 				<key>reqCurrency</key>
-				<real>10000</real>
+				<integer>5000</integer>
 				<key>isVip</key>
 				<true/>
 			</dict>
@@ -177,7 +177,7 @@
 		</array>
 	</dict>
 	<key>baseCurrency</key>
-	<integer>200</integer>
+	<integer>0</integer>
 	<key>currency</key>
 	<dict>
 		<key>spinCost</key>
@@ -196,11 +196,11 @@
 		<key>vipMsg</key>
 		<string>尊敬的用戶，VIP服務需要激活，只需要看视频下载2个游戏即可完成激活（如果点激活按钮没反应，请重启应用或稍后再试）</string>
 		<key>vpnMsg</key>
-		<string>尊敬的用戶，VPN服務需要激活，只需要看视频下载2个游戏即可完成激活（如果点激活按钮没反应，请重启应用或稍后再试）</string>
+		<string>您可以花费2000金币激活VPN服务。</string>
 		<key>vipCount</key>
 		<integer>2</integer>
 		<key>vpnCount</key>
-		<integer>2</integer>
+		<integer>2000</integer>
 		<key>tipMsg</key>
 		<string>尊敬的用戶，經檢測您的IP地址來自中國大陸（你懂的），需要開啟VPN才能觀看完整內容！</string>
 	</dict>

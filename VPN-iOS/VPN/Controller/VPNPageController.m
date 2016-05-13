@@ -12,6 +12,7 @@
 #import "HLService.h"
 #import "NSUserDefaults+KTAdditon.h"
 #import "VPNAlertView.h"
+#import "VPNFavorController.h"
 //@import NetworkExtension;
 
 @interface VPNPageController ()
@@ -95,15 +96,18 @@
             [HLAnalyst event:@"弹出好评次数"];
             [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"VPN_First"];
         }
-    } else if ([HLInterface sharedInstance].ctrl_unlock_img_switch == 1) {
-        if (![[VPNManager sharedManager] isVPNEnable]) {
-            UIViewController *vc = [[VPNManager sharedManager].storyboard instantiateViewControllerWithIdentifier:@"intro"];
-            
-            [self.navigationController pushViewController:vc animated:NO];
-        }
     }
+//    else if ([HLInterface sharedInstance].  == 1) {
+//        if (![[VPNManager sharedManager] isVPNEnable]) {
+//            UIViewController *vc = [[VPNManager sharedManager].storyboard instantiateViewControllerWithIdentifier:@"intro"];
+//            
+//            [self.navigationController pushViewController:vc animated:NO];
+//        }
+//    }
     
-    
+//    UIViewController *vc = [[VPNManager sharedManager].storyboard instantiateViewControllerWithIdentifier:@"favor"];
+//    
+//    [self.navigationController pushViewController:vc animated:NO];
     
     [[HLPopupManager sharedManager] showUpdate:^{
         

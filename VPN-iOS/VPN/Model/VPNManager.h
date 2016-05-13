@@ -48,6 +48,8 @@ typedef NS_ENUM(NSInteger, VPNStatus) {
 
 @property (nonatomic, copy) NSString *loadDescriptionText;
 
+@property (nonatomic, assign) BOOL hasFavor;
+
 - (void)setisVip:(BOOL)isVip;
 
 - (BOOL)isVip;

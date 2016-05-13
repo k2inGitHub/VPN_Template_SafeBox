@@ -197,7 +197,7 @@
 }
 
 - (void)updateVIP {
-    _vipButton.hidden = [[VPNManager sharedManager] isVip];
+    _vipButton.hidden = YES;//[[VPNManager sharedManager] isVip];
 }
 
 - (void)viewWillAppear:(BOOL)animated{

@@ -227,7 +227,7 @@
 
 
 - (void)updateVIP {
-    _vipButton.hidden = [[VPNManager sharedManager] isVip] || ([HLInterface sharedInstance].market_reviwed_status == 0);
+    _vipButton.hidden = YES;//[[VPNManager sharedManager] isVip] || ([HLInterface sharedInstance].market_reviwed_status == 0);
 }
 
 - (void)saveVPNPre {

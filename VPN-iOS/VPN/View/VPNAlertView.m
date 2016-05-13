@@ -176,18 +176,25 @@ static NSMutableArray *_alertViews = nil;
         }
             break;
         case VPNAlertVPN:{
-            if (_vipCurrentCount >= _vipCount) {
+//            if (_vipCurrentCount >= _vipCount) {
+//                
+//            } else {
+//                if ([[HLAdManager sharedInstance] isEncourageInterstitialLoaded]) {
+//                    [[HLAdManager sharedInstance] showEncourageInterstitial];
+//                } else {
+//                    [UIAlertView showWithTitle:nil message:@"广告还没有准备好  请稍后再试" cancelButtonTitle:@"确定" otherButtonTitles:nil tapBlock:^(UIAlertView * _Nonnull alertView, NSInteger buttonIndex) {
+//                        
+//                    }];
+//                }
+//                return;
+//            }
+            
+            if ([[VPNManager sharedManager] costCurrency:_vipCount]) {
                 [[VPNManager sharedManager] setVPNEnable:YES];
-            } else {
-                if ([[HLAdManager sharedInstance] isEncourageInterstitialLoaded]) {
-                    [[HLAdManager sharedInstance] showEncourageInterstitial];
-                } else {
-                    [UIAlertView showWithTitle:nil message:@"广告还没有准备好  请稍后再试" cancelButtonTitle:@"确定" otherButtonTitles:nil tapBlock:^(UIAlertView * _Nonnull alertView, NSInteger buttonIndex) {
-                        
-                    }];
-                }
-                return;
+                
+                [UIAlertView showWithTitle:nil message:[NSString stringWithFormat:@"激活成功扣除%d金币", _vipCount] cancelButtonTitle:@"确定" otherButtonTitles:nil tapBlock:nil];
             }
+            
             [self onCancel:nil];
         }break;
         case VPNAlertVIP:{

@@ -236,7 +236,12 @@
     [self performSelector:@selector(hideRewardView) withObject:nil afterDelay:2];
     if (multiple != 0) {
         [UIAlertView showWithTitle:nil message:[NSString stringWithFormat:@"恭喜你，获得%d金币", (int)toAdd] cancelButtonTitle:@"确定" otherButtonTitles:nil tapBlock:^(UIAlertView * _Nonnull alertView, NSInteger buttonIndex) {
-            [VPNManager showAd2];
+            
+            if ([[HLAdManager sharedInstance] isEncourageInterstitialLoaded]) {
+                [[HLAdManager sharedInstance] showEncourageInterstitial];
+            } else {
+                [[HLAdManager sharedInstance] showUnsafeInterstitial];
+            }
         }];
     } else {
         [VPNManager showAd1];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161541F31CE5868C0065A64B /* VPNFavorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161541F21CE5868C0065A64B /* VPNFavorController.m */; };
 		1618D6091C82F64400C1166C /* AdBaseImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1618D4B81C82F64400C1166C /* AdBaseImp.m */; };
 		1618D6101C82F64400C1166C /* AdMobImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1618D4CD1C82F64400C1166C /* AdMobImp.m */; };
 		1618D6111C82F64400C1166C /* AdMogoImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1618D4CF1C82F64400C1166C /* AdMogoImp.m */; };
@@ -268,7 +269,6 @@
 		16D0BEEF1C99296B00D049E3 /* AdHLImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D0BEEE1C99296B00D049E3 /* AdHLImp.m */; };
 		16D3E4B81CA3B8D900909E95 /* HLADEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D3E4B71CA3B8D900909E95 /* HLADEvent.m */; };
 		16EDBBF61CA8CC8F00A74ECC /* VPNVideoUnlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EDBBF51CA8CC8F00A74ECC /* VPNVideoUnlockController.m */; };
-		16EDBBFA1CA8FAE100A74ECC /* night_girl_004.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16EDBBF91CA8FAE100A74ECC /* night_girl_004.mp4 */; };
 		16F20C661C880AF1000AE519 /* AccountAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F20C251C880AF1000AE519 /* AccountAddController.m */; };
 		16F20C671C880AF1000AE519 /* AccountPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F20C271C880AF1000AE519 /* AccountPreviewController.m */; };
 		16F20C681C880AF1000AE519 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F20C291C880AF1000AE519 /* AccountViewController.m */; };
@@ -329,6 +329,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161541F11CE5868C0065A64B /* VPNFavorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNFavorController.h; sourceTree = "<group>"; };
+		161541F21CE5868C0065A64B /* VPNFavorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNFavorController.m; sourceTree = "<group>"; };
 		1618D4B71C82F64400C1166C /* AdBaseImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBaseImp.h; sourceTree = "<group>"; };
 		1618D4B81C82F64400C1166C /* AdBaseImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBaseImp.m; sourceTree = "<group>"; };
 		1618D4CC1C82F64400C1166C /* AdMobImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobImp.h; sourceTree = "<group>"; };
@@ -735,7 +737,6 @@
 		16D3E4B71CA3B8D900909E95 /* HLADEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLADEvent.m; sourceTree = "<group>"; };
 		16EDBBF41CA8CC8F00A74ECC /* VPNVideoUnlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNVideoUnlockController.h; sourceTree = "<group>"; };
 		16EDBBF51CA8CC8F00A74ECC /* VPNVideoUnlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNVideoUnlockController.m; sourceTree = "<group>"; };
-		16EDBBF91CA8FAE100A74ECC /* night_girl_004.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = night_girl_004.mp4; sourceTree = "<group>"; };
 		16F20C241C880AF1000AE519 /* AccountAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountAddController.h; sourceTree = "<group>"; };
 		16F20C251C880AF1000AE519 /* AccountAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountAddController.m; sourceTree = "<group>"; };
 		16F20C261C880AF1000AE519 /* AccountPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountPreviewController.h; sourceTree = "<group>"; };
@@ -1520,7 +1521,6 @@
 		16941B0F1C86B23600E07BAA /* VPN */ = {
 			isa = PBXGroup;
 			children = (
-				16EDBBF81CA8FABE00A74ECC /* Resources */,
 				16941B101C86B23600E07BAA /* Controller */,
 				16941B1B1C86B23600E07BAA /* Model */,
 				16941B201C86B23600E07BAA /* View */,
@@ -1533,6 +1533,8 @@
 		16941B101C86B23600E07BAA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				161541F11CE5868C0065A64B /* VPNFavorController.h */,
+				161541F21CE5868C0065A64B /* VPNFavorController.m */,
 				16941B111C86B23600E07BAA /* VPNCenterVieController.h */,
 				16941B121C86B23600E07BAA /* VPNCenterVieController.m */,
 				16941B131C86B23600E07BAA /* VPNCurrencyController.h */,
@@ -1618,14 +1620,6 @@
 				16941B941C88052F00E07BAA /* WMScrollView.m */,
 			);
 			path = WMMenuView;
-			sourceTree = "<group>";
-		};
-		16EDBBF81CA8FABE00A74ECC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				16EDBBF91CA8FAE100A74ECC /* night_girl_004.mp4 */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		16F20C221C880AF0000AE519 /* SafeBox */ = {
@@ -1881,7 +1875,6 @@
 				TargetAttributes = {
 					16F5E84D1C7ADA3800AC2538 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = ATG8BKGJTH;
 						SystemCapabilities = {
 							com.apple.VPNLite = {
 								enabled = 0;
@@ -2107,7 +2100,6 @@
 				1618D6B51C82F64400C1166C /* webview_bar_close_hover.png in Resources */,
 				161ECD741C842F390075DC14 /* README.txt in Resources */,
 				1618D6991C82F64400C1166C /* webview_bar_close_hover_ipad@2x.png in Resources */,
-				16EDBBFA1CA8FAE100A74ECC /* night_girl_004.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2261,6 +2253,7 @@
 				16F20C731C880AF1000AE519 /* PhotoDetailController.m in Sources */,
 				1655712F1CA0DB4D00CF7169 /* HLADCommon.m in Sources */,
 				16F20C801C880AF1000AE519 /* UINavigationController+KeyboardDismiss.m in Sources */,
+				161541F31CE5868C0065A64B /* VPNFavorController.m in Sources */,
 				16F20C6C1C880AF1000AE519 /* KKPasscodeSettingsViewController.m in Sources */,
 				165571351CA0DB4D00CF7169 /* HLADReachability.m in Sources */,
 				16F20C711C880AF1000AE519 /* KTViewController.m in Sources */,
@@ -2429,7 +2422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tian Lei (ATG8BKGJTH)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2481,7 +2474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tian Lei (ATG8BKGJTH)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
