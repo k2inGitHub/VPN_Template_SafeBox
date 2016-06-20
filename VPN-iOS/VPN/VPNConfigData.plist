@@ -177,7 +177,7 @@
 		</array>
 	</dict>
 	<key>baseCurrency</key>
-	<integer>0</integer>
+	<integer>200</integer>
 	<key>currency</key>
 	<dict>
 		<key>spinCost</key>
